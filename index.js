@@ -6,7 +6,7 @@ const cors = require("cors");
 app.use(cors());
 app.use(express.json());
 
-const port = process.env.port || 4000;
+const port = process.env.PORT || 4000;
 
 app.get("/", async (req, res) => {
   const url = "https://www.freetogame.com/api/games";
