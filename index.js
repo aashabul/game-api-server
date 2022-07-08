@@ -20,5 +20,5 @@ app.get("/", async (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log("listening to port", port);
+  res.send("listening to port", port);
 });
